@@ -1,0 +1,185 @@
+/* make a beauty to you body  */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* add some variables to show your work easy  */
+
+root {
+    --navbar-height: 60px;
+}
+
+/* make some beauty to your navbar */
+
+#navbar {
+    display: flex;
+
+    /* to make our texts center if it is block if inline 
+    it will won't work but still you have to do this weather
+     inline or block  */
+
+    align-items: center;
+}
+
+/* make some beauty to your img and logo  */
+
+.logo {
+    margin: 8px 30px;
+    margin-left: -9px;
+
+}
+
+.logo img {
+    height: 68px;
+    width: 68px;
+    border-radius: 45px;
+    margin: 5px 15px;
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    /* color:greenyellow */
+    list-style: none;
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 35px;
+    color: lightcoral;
+    font-size: 23px;
+    text-align: center;
+    margin-left: 45px;
+    font-family: "Briem Hand", cursive;
+    animation-name: navbaranimation;
+    animation-duration: 2.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes navbaranimation {
+    0%{
+        color: red;
+    }
+    25%{
+        color: rgb(201, 122, 122);
+    }
+    50%{
+        color: antiquewhite;
+    }
+    75%{
+        color: aqua;
+    }
+    100%{
+        color: blue;
+    }
+    
+}
+
+/* this is what to make our content before pseudocode remember this */
+
+#navbar::before{
+    content: "";
+    background-color: #AD88C6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.1;
+}
+
+#navbar ul li a:hover{
+    animation-delay: 25s;
+    color: red;
+    border-radius: 85px;
+    height: 35px;
+    width: 70px;
+    background-color: white;
+
+    
+}
+#navbar{
+    position: relative;
+}
+
+/* now i am designing my home bar  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 250px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+.h-primary{
+    color: rgb(88, 199, 207);
+    font-size: 2.8rem;
+    padding: 45px;
+    text-align: center;
+    font-family: "Lugrasimo", cursive;
+    animation-name: myclan;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes myclan {
+    0%{
+        font-size: 2.9rem;
+    }
+    
+}
+
+#home p{
+    color: rgb(253, 241, 67);
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+
+}
+#home::before{
+    content: "";
+    background: url('my\ background.jpg') no-repeat center center/cover;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.83;
+    
+}
+.btn{
+    padding: 4px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: rgb(114, 0, 0);   
+    margin: 35px;
+    height: 120px;
+    width: 450pxpx;
+    border-radius: 15px;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+    font-family: "Freeman", sans-serif;
+    font-size: 1.5rem;
+}
+
+/* how to remove background images */
+.box img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+.section-container h1{
+    color: aquamarine;
+}
+.bestimg{
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+}
